@@ -31,7 +31,27 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass",
+              {
+                "input": "src/default.sass",
+                "bundleName": "default",
+                "inject": true
+              },
+              {
+                "input": "src/solar.sass",
+                "bundleName": "solar",
+                "inject": false
+              },
+              {
+                "input": "src/vapor.scss",
+                "bundleName": "vapor",
+                "inject": false
+              },
+              {
+                "input": "src/united.scss",
+                "bundleName": "united",
+                "inject": false
+              }
             ],
             "scripts": []
           },
