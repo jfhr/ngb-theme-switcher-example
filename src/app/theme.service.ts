@@ -13,7 +13,7 @@ export class ThemeService {
 
   public set current(value: string) {
   	localStorage.setItem('theme', value);
-  	this.style.href = `/${value}.css`;
+  	this.style.href = `${value}.css`;
   }
 
   private readonly style: HTMLLinkElement;
@@ -24,7 +24,7 @@ export class ThemeService {
     document.head.appendChild(this.style);
 
     if (localStorage.getItem('theme') !== undefined) {
-    	this.style.href = `/${this.current}.css`;
+    	this.style.href = `${this.current}.css`;
     }
   }
 }
