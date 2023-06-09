@@ -189,3 +189,14 @@ $btn-close-color:                       $body-color !default
 $pre-color:                         inherit !default
 
 @import '~bootstrap/scss/bootstrap'
+
+// Set the CSS variable --primary to the value of the bootstrap variable $primary.
+// The value of a bootstrap variable is determined at build time. After building, this
+// file will be converted to a file default.css with the content:
+//   * {
+//     --primary: #b58900
+//   }
+
+
+*
+  --primary: #{$primary}
